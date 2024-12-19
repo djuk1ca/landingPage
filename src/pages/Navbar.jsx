@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
-export default function Navbar(){
+export default function Navbar({username}){
+
     return(
         <nav className="flex justify-between items-center mx-10  font-zenKaku py-2">
             <div className="flex w-1/2 gap-10 justify-between items-center">
@@ -15,7 +16,7 @@ export default function Navbar(){
             <Link
                 to="/account"
                 className="text-sm py-3 px-6 rounded-sm border-[#555555] border-[1px] bg-transparent uppercase text-[#B4B4B4] font-thin">
-                your account
+                {username}
             </Link>
         </nav>
     )

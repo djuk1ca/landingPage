@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Search(){
+export default function Search({username}){
     return(
         <div className="fixed top-0 z-50 w-full">
             <div className="container relative w-full">
@@ -10,9 +10,9 @@ export default function Search(){
                         <h1 className="text-2xl text-yellow-300">BA</h1>
                     </Link>
                     <Link
-                        to="#"
+                        to="/account"
                         className="text-sm py-3 px-6 rounded-sm border-yellow-300 border-[1px] bg-transparent uppercase text-yellow-300 font-thin">
-                        your account
+                        {username}
                     </Link>
                 </nav>
             </div>

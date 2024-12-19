@@ -5,15 +5,13 @@ import Register from './pages/loginPage/Register'
 import Dashboard from './pages/dashboardPage/Dashboard'
 import Search from './pages/searchPage/Search'
 import ReportIncident from './pages/reportIncidentPage/ReportIncident'
+import UserProfile from './pages/userProfilePage/UserProfile'
+import BrokerProfile from './pages/brokerProfilePage/brokerProfile'
 import { useState } from 'react'
 
 
 function App() {
-  const [register, setRegister] = useState(false)
-  
-  function handleRegister(){
-    setRegister((register) => !register);
-  }
+ 
 
   const router = createBrowserRouter([
     {
@@ -22,11 +20,11 @@ function App() {
     },
     {
       path: "/login",
-      element: <Login register={register} handleRegister={handleRegister}/>
+      element: <Login />
     },
     {
       path: "/register",
-      element: <Register register={register} handleRegister={handleRegister}/>
+      element: <Register />
     },
     {
       path: "/dashboard",
@@ -39,6 +37,14 @@ function App() {
     {
       path: "/report",
       element: <ReportIncident />
+    },
+    {
+      path: "/account",
+      element: <UserProfile />
+    },
+    {
+      path: "/broker",
+      element: <BrokerProfile />
     }
   ])
 
