@@ -9,7 +9,7 @@ export default function Subsection() {
                     <p className="text-[0.75rem] lg:text-[1rem] text-justify">orem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra metus quis tortor egestas, quis iaculis quam mattis. Quisque feugiat dapibus lectus ac faucibus. Morbi condimentum placerat egestas. Nullam euismod justo in tortor luctus gravida. Vivamus vehicula neque non metus porttitor elementum. Cras tortor nunc, vestibulum sed tellus vel, fringilla tempus eros. Nam velit urna, volutpat in elit at, porta finibus eros. Fusce at orci id urna gravida pellentesque sed eu quam. Nam ligula nunc, finibus non felis at, lacinia mattis massa. Morbi a libero congue, fermentum velit et, aliquet eros. Ut sit amet risus consectetur, placerat elit ut, sollicitudin turpis.</p>
                 </div>
                 <div className="w-full lg:w-[45%] flex flex-col items-center lg:items-end lg:text-right">
-                    <div className="w-full lg:w-[80%] hover:scale-105 transition-transform duration-300">
+                    <div className="w-full lg:w-[80%]">
                         <button onClick={() => setMenuOpen(!menuOpen)} className="w-full cursor-pointer flex items-center justify-between py-3 text-[1.5rem] text-white uppercase font-bold px-4 lg:px-12 bg-gradient-to-b from-[#065967] to-[#dde26e] rounded-t-lg border-[2px] border-[#00818A] border-b-0">
                             Report Types
                             <svg class="-mr-1 size-[2.5rem] text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
@@ -18,9 +18,9 @@ export default function Subsection() {
                             </button>
                         <ul className={`${menuOpen ? `max-h-screen opacity-100` : `max-h-0 opacity-0`} 
                                         transition-all duration-300 overflow-hidden 
-                                        px-12 text-center lg:text-left w-full none py-3 
+                                        px-12 text-center lg:text-left w-full none py-3 font-semibold tracking-wider
                                         bg-gradient-to-t border-[2px] border-[#00818A] border-t-0 from-[#065967] to-[#dde26e]`}>
-                            <li className="">Filed False Carrier Report</li>
+                            <li >Filed False Carrier Report</li>
                             <li>Detention Unpaid</li>
                             <li>TONU Unpaid</li>
                             <li>Lumper Unpaid</li>
