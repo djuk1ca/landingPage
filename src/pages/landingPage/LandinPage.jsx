@@ -5,6 +5,7 @@ import NewsSection from './components/NewsSection'
 import InfoSection from './components/InfoSection'
 import BrokerPage from './components/BrokerPage'
 import Subsection from './components/Subsection'
+import FourthSection from './components/FourthSection'
 import Info1 from './components/Info1'
 import Info2 from './components/Info2'
 import Cards from './components/Cards'
@@ -29,10 +30,11 @@ export default function LandingPage() {
           
           <Subsection />
           <hr className="h-px w-[95%] m-auto border-0 bg-[#2D2D2D]"/>
+          <FourthSection />
+          <hr className="h-px w-[95%] m-auto border-0 bg-[#2D2D2D]"/>
           <Cards />
           <br />
           <br />
-
           <hr className="h-px w-[95%] m-auto border-0 bg-[#2D2D2D]"/>
           <Footer />
 
