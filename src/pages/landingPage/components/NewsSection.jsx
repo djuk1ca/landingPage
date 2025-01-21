@@ -40,9 +40,9 @@ export default function NewsSection() {
     };
 
     return (
-        <div className="py-8 w-[90%] lg:w-4/5 m-auto">
+        <div className="py-8 w-[90%] lg:w-4/5 m-auto ">
             <h1 className='hidden text-center font-black text-[2.5rem] text-white pb-8'>News</h1>
-            <div className="h-[60vh] flex justify-center p-4 items-center relative overflow-hidden border-[2px] border-[#333] rounded-lg text-white">
+            <div className="bg-pozadina bg-cover bg-center h-[60vh] flex justify-center p-4 items-center relative overflow-hidden border-[2px] border-[#333] rounded-lg text-white">
                 <button onClick={handlePrev} className="absolute left-4 z-10 cursor-pointer">
                     <MdKeyboardArrowLeft color="#fff" size={50} />
                 </button>
