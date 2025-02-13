@@ -59,51 +59,51 @@ const LoginForm = () => {
     }
 
     return (
-        <div className="z-10 flex justify-center items-center w-screen h-screen">
-            <div className="mt-16 lg:w-[28rem] sm:w-4/5 xs:w-full h-[25rem] bg-neutral-200 rounded-[75px] text-center">
-                <div className="my-4 mt-8">
-                    <h1 className="text-2xl mt-6 font-semibold tracking-wide">Log in to BA</h1>
-                    <p className="font-extralight text-[10px]">Lorem ipsum farani asdasdasdas sdasdadasdas</p>
+        <div className="flex justify-center items-center w-screen h-screen">
+            <div className="py-8 px-8 lg:px-10 w-4/5 md:w-3/5 lg:w-1/4 bg-white rounded-[3rem] text-center">
+                <div className="">
+                    <h1 className="text-[2rem] font-semibold tracking-wide">Log In to BA</h1>
+                    <p className="text-[0.8rem] font-extralight">Lorem ipsum farani asdasdasdas sdasdadasdas</p>
                 </div>
 
-                <form ref={formRef} onSubmit={handleSubmit} className="mt-10">
-                    <div className="mx-16">
-                        <div className="pl-3 py-1 flex flex-col items-start bg-neutral-300 border border-black rounded-lg">
-                            <label htmlFor="email" className="uppercase pr-2 text-xs pt-1">Email Address:</label>
+                <form ref={formRef} onSubmit={handleSubmit} className="mt-8">
+                    <div className="">
+                        <div className="pl-3 py-1 flex flex-col items-start bg-neutral-300 border border-[#212121] rounded-[1rem]">
+                            <label htmlFor="email" className="uppercase my-2 text-[0.75rem] text-[#424242] font-medium tracking-tighter leading-3 ">Email Address</label>
                             <input
-                                type="text"
+                                type="email"
                                 name="email"
-                                className="w-full pb-1 border-0 outline-none bg-transparent text-sm"
+                                className="placeholder-[#616161] text-[#616161] text-[1rem] w-full mb-2 border-0 outline-none bg-transparent text-sm"
                                 placeholder="jondoe123@gmail.com"
                             />
                         </div>
 
-                        <div className="pl-3 py-1 flex flex-col items-start bg-neutral-300 border border-black rounded-lg mt-3">
-                            <label htmlFor="password" className="uppercase pr-2 text-xs pt-1">Password:</label>
+                        <div className="pl-3 py-1 mt-3 flex flex-col items-start bg-neutral-300 border border-[#212121] rounded-[1rem]">
+                            <label htmlFor="password" className="uppercase my-2 text-[0.75rem] text-[#424242] font-medium tracking-tighter leading-3">Password</label>
                             <input
                                 type="password"
                                 name="password"
-                                className="w-full pb-1 border-0 outline-none bg-transparent text-sm"
-                                placeholder="*********"
+                                className="placeholder-[#616161] text-[#616161] text-[1rem] w-full mb-2 border-0 outline-none bg-transparent text-sm"
+                                placeholder="********"
                             />
                         </div>
                     </div>
-                    <div className="flex justify-between my-3 mx-16">
+                    <div className="flex justify-between my-4 px-1 ">
                         <div className="flex items-center">
-                            <input type="checkbox" className="w-4 h-4 mr-1" />
-                            <p className="text-[0.75rem] lg:text-xs md:text-xs sm:text-xs tracking-tighter font-extralight underline">
-                                Remember me
+                            <input type="checkbox" className="w-5 h-5 mr-2" />
+                            <p className="text-[0.75rem] text-[#616161] lg:text-xs md:text-xs sm:text-xs tracking-tighter font-extralight">
+                                Remember Me
                             </p>
                         </div>
-                        <a href="#" className="text-[0.75rem] lg:text-xs md:text-xs sm:text-xs tracking-tighter font-extralight underline">
-                            Forget Password?
+                        <a href="#" className="text-[0.75rem] text-[#616161] lg:text-xs md:text-xs sm:text-xs tracking-tighter hover:underline font-extralight">
+                            Forgot Password?
                         </a>
                     </div>
                     {message ? <p className="mt-2 mb-3 text-red-500 text-[0.75rem]">{message}</p> : ""}
-                    <div className="mx-16">
+                    <div className="">
                         <button
                             type="submit"
-                            className="uppercase text-lg text-yellow-400 bg-neutral-900 rounded-md w-full py-3"
+                            className="uppercase text-lg text-yellow-400 bg-neutral-900 rounded-lg w-full py-5"
                         >
                             Proceed
                         </button>

@@ -13,13 +13,13 @@ export default function StarRating({...props}){
                 return (
                     <label>
                         <input 
+                            key={i}
                             type="radio" 
                             className="hidden" 
                             value={ratingValue} 
                             onClick={() => setRating(ratingValue)}
                         />
                         <FaStar 
-                            key={i}
                             className={props.className} 
                             color={ratingValue <= (hover || rating) ? "#005a8a" : "#00818A"} 
                             size={20} 

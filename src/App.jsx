@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import LandingPage from './pages/landingPage/LandinPage'
 import Login from './pages/loginPage/Login'
 import Register from './pages/loginPage/Register'
+import EmailVerification from './pages/loginPage/EmailVerification'
 import Dashboard from './pages/dashboardPage/Dashboard'
 import Search from './pages/searchPage/Search'
 import ReportIncident from './pages/reportIncidentPage/ReportIncident'
@@ -25,6 +26,10 @@ function App() {
     {
       path: "/register",
       element: <Register />
+    },
+    {
+      path: "/verify",
+      element: <EmailVerification />
     },
     {
       path: "/dashboard",

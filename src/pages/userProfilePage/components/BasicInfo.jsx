@@ -1,13 +1,14 @@
-export default function BasicInfo(){
+export default function BasicInfo({fullName, email, phone, adress, companyName}){
     return (
-        <div className="flex flex-col py-10 px-8 w-1/3 lg:w-1/4">
-            <img src="/gradient.png" alt="pfp" className="w-28 h-28 lg:w-60 lg:h-60 rounded-full"/>
-            <div className="ml-3 mt-3">
-                <h1 className="text-[2rem] lg:text-[3rem] leading-10"><b>John Doe</b></h1>
-                <p className="text-[#C1C1C1]">johndoe@gmail.com</p>
-                <p className="mt-4"><b>Affiliated Carrier Company</b></p>
-                <p className="mt-4">Test Company Name</p>
-                <p className="mt-12">BlaBla Avenue 2561</p>
+        <div className="w-full lg:w-1/3 flex flex-col items-center lg:items-start">
+            <img src="/gradient.png" alt="pfp" width={150} className="rounded-full"/>
+            <div className="flex flex-col items-center lg:items-start gap-3 text-[#C1C1C1]">
+                <h1 className="text-white text-[2rem] lg:text-[3rem]"><b>{fullName}</b></h1>
+                <p className="">{email}</p>
+                <p className="text-white"><b>Affiliated Carrier Company</b></p>
+                <p className="">{companyName}</p>
+                <p className="">{adress}</p>
+                <p className="">{phone}</p>
             </div>
         </div>
     )   

@@ -1,16 +1,18 @@
 import sidebarBreaker from "../../assets/sidebarBreaker.png"
 import { Link } from "react-router-dom"
+import { IoCloseOutline } from "react-icons/io5";
 
-const brokers = ["Broker 1", "Broker 1", "Broker 1", "Broker 1", "Broker 1"]
 
-export default function Sidebar(){
+const brokers = ["Broker 1", "Broker 2", "Broker 3", "Broker 4", "Broker 5"]
+
+export default function Sidebar({sidebarOpen, handleSidebar}){
     return(
-        <div className="lg:flex min-h-screen font-zenKaku hidden fixed">
+        <div className={`${sidebarOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0" } flex transition-all ease-in-out duration-500 fixed bg-[#151516] min-h-screen z-10`}>
             <div className="block text-center">
-                <Link to="/" className="flex justify-center items-center h-24 w-24 mx-16 gap-2 ">
-                        <div className="w-[30px] h-[30px] rounded-full bg-yellow-300"></div>
-                        <h1 className="text-2xl text-yellow-300">BA</h1>
-                </Link>
+                <div className=" flex gap-2 justify-between items-center mx-8 my-12">
+                    <button onClick={handleSidebar} className="hover:scale-125 transition-all duration-300"><IoCloseOutline color="white" size={50} /></button>
+                    <img src="/logoDark.png" width={200} alt="" />
+                </div>
                 <div className="mb-10">
                     <h3 className="w-[90%] bg-[#252525] text-white rounded-md font-thin mx-auto tracking-wider py-2 text-sm">Saved Brokers</h3>
                     <ul className="mt-4 flex flex-col items-center">

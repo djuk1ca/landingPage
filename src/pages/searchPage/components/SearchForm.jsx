@@ -12,7 +12,7 @@ export default function SearchForm(){
                 <div className="flex flex-wrap -mx-3 mb-2">
                     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                         <div className="relative border-white">
-                            <select className="appearance-none w-full bg-transparent border-white border-[1px] text-[#C1C1C1] py-3 pl-6 pr-8 rounded-[14px] leading-normal font-thin  focus:border-gray-300">
+                            <select className="appearance-none w-full bg-transparent border-white border-[1px] text-[#C1C1C1] py-3 pl-6 pr-8 rounded-lg leading-normal font-thin  focus:border-gray-300">
                                 <option>City</option>
                                 {options.map((item, index) => (
                                     <option key={index}>{item}</option>
@@ -26,8 +26,8 @@ export default function SearchForm(){
                         </div>
                     </div>
                     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                        <div className="relative bor">
-                            <select className="appearance-none w-full bg-transparent border-white border-[1px] text-[#C1C1C1] py-3 pl-6 pr-8 rounded-[14px] leading-normal font-thin  focus:border-gray-300">
+                        <div className="relative border-white">
+                            <select className="appearance-none w-full bg-transparent border-white border-[1px] text-[#C1C1C1] py-3 pl-6 pr-8 rounded-lg leading-normal font-thin  focus:border-gray-300">
                                 <option>State</option>
                                 {options.map((item, index) => (
                                     <option key={index}>{item}</option>
@@ -41,7 +41,7 @@ export default function SearchForm(){
                         </div>
                     </div>
                     <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                        <input className="appearance-none block w-full bg-transparent text-[#C1C1C1] border border-gray-200 rounded-[14px] py-3 px-3 font-thin leading-normal focus:border-gray-500" type="text" placeholder="Site score rating"/>
+                        <input className="appearance-none block w-full bg-transparent text-[#C1C1C1] placeholder-[#C1C1C1] border border-gray-200 rounded-lg py-3 px-3 font-thin leading-normal focus:border-gray-500" type="text" placeholder="Site score rating"/>
                     </div>
                 </div>
                 <div className="block text-center pt-8">

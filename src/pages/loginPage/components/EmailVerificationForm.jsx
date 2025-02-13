@@ -72,54 +72,22 @@ const RegisterForm = () => {
     
     return (
         <div className="flex justify-center items-center w-screen h-screen">
-            <div className="py-8 px-8 lg:px-10 w-4/5 md:w-3/5 lg:w-1/4 bg-white rounded-[3rem] text-center">
-                <div className="">
-                    <h1 className="text-[2rem] font-semibold tracking-wide">Register to BA</h1>
-                    <p className="text-[0.8rem] font-extralight">Lorem ipsum farani asdasdasdas sdasdadasdas</p>
+            <div className="py-12 flex flex-col gap-6 px-8 lg:px-10 w-4/5 md:w-3/5 lg:w-1/4 bg-white rounded-[3rem] text-center">
+                <div>
+                    <h1 className="text-[2rem] font-semibold tracking-wide">E-Mail Verification</h1>
+                    <p className="w-2/3 text-[0.8rem] m-auto font-extralight">An email containing a 6-digit code has been sent to 
+                    *****k@gmail.com</p>
                 </div>
 
-                <form ref={formRef} onSubmit={handleSubmit} className="mt-8">
-                    <div className="">
-                        <div className="pl-3 py-1 flex flex-col items-start bg-neutral-300 border border-[#212121] rounded-[1rem]">
-                            <label htmlFor="fullName" className="uppercase my-2 text-[0.75rem] text-[#424242] font-medium tracking-tighter leading-3 ">Full Name</label>
-                            <input
-                                type="text"
-                                name="fullName"
-                                className="placeholder-[#616161] text-[#616161] text-[1rem] w-full mb-2 border-0 outline-none bg-transparent text-sm"
-                                placeholder="Jon Doe"
-                            />
-                        </div>
-
-                        <div className="pl-3 mt-3 py-1 flex flex-col items-start bg-neutral-300 border border-[#212121] rounded-[1rem]">
-                            <label htmlFor="email" className="uppercase my-2 text-[0.75rem] text-[#424242] font-medium tracking-tighter leading-3 ">Email Address</label>
-                            <input
-                                type="email"
-                                name="email"
-                                className="placeholder-[#616161] text-[#616161] text-[1rem] w-full mb-2 border-0 outline-none bg-transparent text-sm"
-                                placeholder="jondoe123@gmail.com"
-                            />
-                        </div>
-
-                        <div className="pl-3 py-1 mt-3 flex flex-col items-start bg-neutral-300 border border-[#212121] rounded-[1rem]">
-                            <label htmlFor="password" className="uppercase my-2 text-[0.75rem] text-[#424242] font-medium tracking-tighter leading-3">Password</label>
-                            <input
-                                type="password"
-                                name="password"
-                                className="placeholder-[#616161] text-[#616161] text-[1rem] w-full mb-2 border-0 outline-none bg-transparent text-sm"
-                                placeholder="********"
-                            />
-                        </div>
-                    </div>
-                    <div className="flex justify-between my-4 px-1 ">
-                        <div className="flex items-center">
-                            <input type="checkbox" className="w-5 h-5 mr-2" />
-                            <p className="text-[0.75rem] text-[#616161] lg:text-xs md:text-xs sm:text-xs tracking-tighter font-extralight">
-                                I Accept TOS
-                            </p>
-                        </div>
-                        <a href="#" className="text-[0.75rem] text-[#616161] lg:text-xs md:text-xs sm:text-xs tracking-tighter hover:underline font-extralight">
-                            Already Registered?
-                        </a>
+                <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
+                    <div className="pl-3 py-1 flex flex-col items-start bg-neutral-300 border border-[#212121] rounded-[1rem]">
+                        <label htmlFor="code" className="uppercase my-2 text-[0.75rem] text-[#424242] font-medium tracking-tighter leading-3 ">6-digit code</label>
+                        <input
+                            type="text"
+                            name="fullName"
+                            className="placeholder-[#616161] text-[#616161] text-[1rem] w-full mb-2 border-0 outline-none bg-transparent text-sm"
+                            placeholder="* * * * * *"
+                        />
                     </div>
                     {message ? <p className="mt-2 mb-3 text-red-500 text-[0.75rem]">{message}</p> : ""}
                     <div className="">

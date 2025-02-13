@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import logo from "./assets/logo.png"
+import logo from "/logoDark.png"
 
 export default function Navbar({username}){
 
@@ -7,7 +7,7 @@ export default function Navbar({username}){
         <nav className="w-screen flex justify-between items-center px-5  font-zenKaku py-6">
             <div className="flex w-2/3 gap-10 justify-start items-center">
                 <Link to="/" className="hidden lg:block">
-                    <img src={logo} width="50px" alt=""/>
+                    <img src={logo} width={200} alt=""/>
                 </Link>            
                 <input className="w-max md:w-1/3 bg-transparent text-[#C1C1C1] text-sm border border-white rounded-full py-3 px-8  font-thin leading-normal  focus:border-gray-300" type="text" placeholder="Name, USDOT, or MC..."/>
             </div>

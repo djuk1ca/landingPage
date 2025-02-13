@@ -17,7 +17,7 @@ export default function LandingPage() {
 
   return (
     <>
-    {/*from-[#065967] to-[#dde26e] GRADIENT*/} 
+    {/*from-[#065967] to-[#dde26e] GRADIENT*/}
       <Navbar />
       <div className="font-zenKaku bg-[#151516] bg-pozadina overflow-x-hidden" >
         <Hero />

@@ -4,14 +4,24 @@ import Board from "./components/Board"
 import ActionHistory from "./components/ActionHistory"
 import BasicInfo from "./components/BasicInfo"
 
+import { useState } from "react"
+
 export default function Dashboard(){
     const username = localStorage.getItem("username")
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+
+
+
+    function handleSidebar(){
+        setSidebarOpen(!sidebarOpen)
+    }
+
     return(
-        <div className="bg-[#151516] flex font-zenKaku">
-            <Sidebar/>
-            <div className="block w-full lg:ml-[15%]">
-                <Navbar username={username}/>
-                <div className="mx-12 lg:ml-24 mt-8 lg:mr-20">
+        <div className="relative bg-[#151516] flex font-zenKaku">
+            <Sidebar sidebarOpen={sidebarOpen} handleSidebar={handleSidebar} />
+            <div className="block w-full">
+                <Navbar username={username} handleSidebar={handleSidebar} />
+                <div className="px-6 lg:px-12 ">
                     <h1 className="text-white text-xl font-thin tracking-wider">Dashboard</h1>
 
                     <BasicInfo />
