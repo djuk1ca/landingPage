@@ -9,7 +9,7 @@ import ReviewsList from "./components/ReviewsList";
 
 export default function BrokerProfile() {
     return (
-        <div className="bg-pozadina bg-cover bg-[#151516] w-screen h-max lg:h-screen font-zenKaku">
+        <div className="bg-pozadina bg-cover bg-[#151516] h-max lg:h-screen font-zenKaku">
             <Navbar username={localStorage.getItem("username")}/>
             <div className="flex flex-wrap items-center justify-between w-full">
                 <div className="w-full lg:w-1/2 px-10 flex flex-col items-center">

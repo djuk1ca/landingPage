@@ -4,7 +4,7 @@ import logo from "/logoDark.png"
 export default function Navbar({username}){
 
     return(
-        <nav className="w-screen flex justify-between items-center px-5  font-zenKaku py-6">
+        <nav className="w-[90%] lg:w-4/5 m-auto flex justify-between items-center py-4" >
             <div className="flex w-2/3 gap-10 justify-start items-center">
                 <Link to="/" className="hidden lg:block">
                     <img src={logo} width={200} alt=""/>
@@ -13,9 +13,9 @@ export default function Navbar({username}){
             </div>
             
             <Link
-                to="/account"
+                to={username ? "/account" : "/login"}
                 className="text-sm py-3 px-6 rounded-sm border-[#555555] border-[1px] bg-transparent uppercase text-[#B4B4B4] font-thin">
-                {username}
+                {username ? username : "Log In"}
             </Link>
         </nav>
     )

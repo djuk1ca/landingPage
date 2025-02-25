@@ -6,48 +6,41 @@ const news = [
     {
         imageUrl: "/gradient.png",
         title: "title-1",
-        description: "lorem ipsum dolor mitasdasd sadasda sdasdas amet",
-        link: "verygoodsite.com"
+        description: "lorem ipsum dolor mitasdasd sadasda sdasdas amet"
     },
     {
         imageUrl: "/gradient.png",
         title: "title-2",
-        description: "lorem ipsum dolor mit amet",
-        link: "verygoodsite.com"
+        description: "lorem ipsum dolor mit amet"
     },
     {
         imageUrl: "/gradient.png",
         title: "title-3",
-        description: "lorem ipsum dolor mit amet",
-        link: "verygoodsite.com"
+        description: "lorem ipsum dolor mit amet"
     },
     {
         imageUrl: "/gradient.png",
         title: "title-4",
-        description: "lorem ipsum dolor mit amet",
-        link: "verygoodsite.com"
+        description: "lorem ipsum dolor mit amet"
     },
     {
         imageUrl: "/gradient.png",
         title: "title-5",
-        description: "lorem ipsum dolor mit amet",
-        link: "verygoodsite.com"
+        description: "lorem ipsum dolor mit amet"
     },
     {
         imageUrl: "/gradient.png",
         title: "title-6",
-        description: "lorem ipsum dolor mit amet",
-        link: "verygoodsite.com"
+        description: "lorem ipsum dolor mit amet"
     },
     {
         imageUrl: "/gradient.png",
         title: "title-7",
-        description: "lorem ipsum dolor mit amet",
-        link: "verygoodsite.com"
+        description: "lorem ipsum dolor mit amet"
     },
 ];
 
-export default function NewsSection() {
+export default function IndustrySecrets() {
     
     const sliderSettings = {
         dots: true,
@@ -71,7 +64,7 @@ export default function NewsSection() {
 
     return (
         <div className="py-16 pt-14 w-[85%] lg:w-4/5 m-auto">
-            <h2 className='text-center font-black text-[2.5rem] text-white mb-4'>Why This Industry Needs a <span className="text-[#C4CB38]">Watchdog</span></h2>
+            <h1 className='text-center font-black text-[2.5rem] text-white mb-4'>Industry Secrets Every Carrier <span className="text-[#C4CB38]">Should Know</span></h1>
  
             <Slider {...sliderSettings} >
                 {news.map((item, key) => (
@@ -93,7 +86,6 @@ export default function NewsSection() {
                         </div>
                     </div>
                 ))}
-              
             </Slider>
         </div>
     );

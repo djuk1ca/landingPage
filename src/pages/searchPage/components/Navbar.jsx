@@ -8,9 +8,9 @@ export default function Search({username}){
                     <img src="/logoDark.png" width={150} alt="" />
                 </Link>
                 <Link
-                    to="/account"
+                    to={username ? "/account" : "/login"}
                     className="text-sm py-3 px-6 rounded-sm border-yellow-300 border-[1px] bg-transparent uppercase text-yellow-300 font-thin">
-                    {username}
+                    {username ? username : "Log In"}
                 </Link>
             </nav>
         </div>

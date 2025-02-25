@@ -11,6 +11,7 @@ import ComingSoon from './components/ComingSoon'
 import Info1 from './components/Info1'
 import Info2 from './components/Info2'
 import Cards from './components/Cards'
+import IndustrySecrets from './components/IndustrySecrets'
 import Footer from './components/Footer'
 
 export default function LandingPage() {
@@ -19,15 +20,15 @@ export default function LandingPage() {
     <>
     {/*from-[#065967] to-[#dde26e] GRADIENT*/}
       <Navbar />
-      <div className="font-zenKaku bg-[#151516] bg-pozadina overflow-x-hidden" >
+      <div className="font-zenKaku bg-[#151516] bg-pozadina" >
         <Hero />
         <div className='bg-[#151516] w-full h-full opacity-100'>
           <img src={Braker} className='w-full' alt="grad" />
           <NewsSection />
           <hr className="h-px w-[95%] m-auto border-0 bg-[#2D2D2D]"/>
-          <InfoSection />
-          <hr className="h-px w-[95%] m-auto border-0 bg-[#2D2D2D]"/>
           <BrokerPage />
+          <hr className="h-px w-[95%] m-auto border-0 bg-[#2D2D2D]"/>
+          <InfoSection />
           <hr className="h-px w-[95%] m-auto border-0 bg-[#2D2D2D]"/>
           
           <Subsection />
@@ -38,10 +39,8 @@ export default function LandingPage() {
           <hr className="h-px w-[95%] m-auto border-0 bg-[#2D2D2D]"/>
           <ComingSoon />
           <hr className="h-px w-[95%] m-auto border-0 bg-[#2D2D2D]"/>
-          <Cards />
-          <br />
-          <br />
-          <hr className="h-px w-[95%] m-auto border-0 bg-[#2D2D2D]"/>
+          <IndustrySecrets />
+          <hr className="h-px w-full m-auto border-0 bg-[#2D2D2D]"/>
           <Footer />
 
         </div>

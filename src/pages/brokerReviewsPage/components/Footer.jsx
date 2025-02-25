@@ -16,10 +16,10 @@ export default function Footer(){
                 <p>Accountability for brokers, clarity for carriers.</p>
                 <p className='font-semibold'>support@brokerauditor.com</p>
                 <div className='flex justify-center lg:justify-normal w-full'>
-                <SocialIcon url='https://www.linkedin.com/company/broker-auditor/' network="linkedin" bgColor="#151516" />
-                    <SocialIcon url='https://www.youtube.com/channel/UCdaHHbZmFf_owDmQSDuOoGA' width={150} network="youtube" bgColor="#151516" />
-                    <SocialIcon url='https://x.com/BrokerAuditor/' network="x" bgColor="#151516" />
-                    <SocialIcon url='https://www.instagram.com/brokerauditor/' network="instagram" bgColor="#151516" />
+                    <SocialIcon url='https://www.facebook.com' width={150} network="facebook" bgColor="#151516" />
+                    <SocialIcon url='https://www.youtube.com' network="youtube" bgColor="#151516" />
+                    <SocialIcon url='https://www.x.com' network="x" bgColor="#151516" />
+                    <SocialIcon url='https://www.instagram.com' network="instagram" bgColor="#151516" />
                 </div>
             </div>
             <div className='flex w-max flex-col items-start lg:items-center font-thin tracking-wide gap-2 uppercase text-left'>

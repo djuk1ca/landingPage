@@ -4,11 +4,14 @@ import Login from './pages/loginPage/Login'
 import Register from './pages/loginPage/Register'
 import EmailVerification from './pages/loginPage/EmailVerification'
 import Dashboard from './pages/dashboardPage/Dashboard'
+import AdminDashboard from './pages/adminPage/AdminDashboard'
 import Search from './pages/searchPage/Search'
 import ReportIncident from './pages/reportIncidentPage/ReportIncident'
 import UserProfile from './pages/userProfilePage/UserProfile'
-import BrokerProfile from './pages/brokerProfilePage/brokerProfile'
-import { useState } from 'react'
+import BrokerProfile from './pages/brokerProfilePage/BrokerProfile'
+import BrokerReviews from './pages/brokerReviewsPage/brokerReviews'
+import SubscriptionPage from './pages/subscriptionPage/SubscriptionPage'
+//import { useState } from 'react'
 
 
 function App() {
@@ -18,6 +21,10 @@ function App() {
     {
       path: "/",
       element: <LandingPage />
+    },
+    {
+      path: "/plans",
+      element: <SubscriptionPage />
     },
     {
       path: "/login",
@@ -36,12 +43,20 @@ function App() {
       element: <Dashboard />
     },
     {
+      path: "/admin",
+      element: <AdminDashboard />
+    },
+    {
       path: "/search",
       element: <Search />
     },
     {
-      path: "/report",
-      element: <ReportIncident />
+      path: "/reportincident",
+      element: <ReportIncident editing={false}/>
+    },
+    {
+      path: "/editreport",
+      element: <ReportIncident editing={true}/>
     },
     {
       path: "/account",
@@ -50,12 +65,16 @@ function App() {
     {
       path: "/broker",
       element: <BrokerProfile />
+    },
+    {
+      path: "/reviews",
+      element: <BrokerReviews />
     }
   ])
 
 
   return (
-    <>      
+    <>
       <RouterProvider router={router}/>
     </>
   )
