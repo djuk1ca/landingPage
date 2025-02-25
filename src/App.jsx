@@ -9,7 +9,7 @@ import Search from './pages/searchPage/Search'
 import ReportIncident from './pages/reportIncidentPage/ReportIncident'
 import UserProfile from './pages/userProfilePage/UserProfile'
 import BrokerProfile from './pages/brokerProfilePage/BrokerProfile'
-import BrokerReviews from './pages/brokerReviewsPage/brokerReviews'
+import BrokerReviews from './pages/brokerReviewsPage/BrokerReviews'
 import SubscriptionPage from './pages/subscriptionPage/SubscriptionPage'
 //import { useState } from 'react'
 
